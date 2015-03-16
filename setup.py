@@ -18,14 +18,9 @@ exts = [Extension("log_xc_mesh",
                   ["log_xc_mesh.pyx"],
                   extra_compile_args=extra_args,
                   extra_link_args=extra_args),
-#        Extension("julia_cython_solution",
-#                  ["julia_cython_solution.pyx"],
-#                  extra_compile_args=extra_args,
-#                  extra_link_args=extra_args),
         ]
 
 setup(
     name = "chain",
-#    cmdclass = {'build_ext': build_ext},
     ext_modules = cythonize(exts),
 )

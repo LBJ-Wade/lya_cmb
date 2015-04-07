@@ -3,7 +3,7 @@ This package includes 3 important things:
 1. A cython module using linked list to do a chaining mesh algorithm to do cross
 correlations.
 
-python setup.py bulid_ext --inplace
+python setup.py build_ext --inplace
 
 2. A nilcrun/milcarun python file to do some basics on data preprocessing.
 
